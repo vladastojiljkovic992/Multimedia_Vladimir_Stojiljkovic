@@ -4,13 +4,21 @@
 
 package com.main.main;
 
-/**
- *
- * @author stepa
- */
 public class main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+//        int a = 5;
+//        int b = 10;
+        
+        Main prva  = new Main ();
+        prva.printAttributes();
+        prva.volume = 0;
+        prva.currentProgram = 1;
+        prva.turnOn = "true";
+        
+        prva.printAttributes();
+        
+        Main radio = new Main;
+        
     }
 }
