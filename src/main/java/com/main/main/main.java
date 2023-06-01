@@ -4,21 +4,28 @@
 
 package com.main.main;
 
+import com.main.main.media.Television;
+import com.main.main.media.Radio;
+
 public class main {
 
     public static void main(String[] args) {
 //        int a = 5;
 //        int b = 10;
         
-        Main prva  = new Main ();
-        prva.printAttributes();
-        prva.volume = 0;
-        prva.currentProgram = 1;
-        prva.turnOn = "true";
+        Television Panasonic  = new Television();
+        Panasonic.info();
+        Panasonic.setTurnOn(true);
+        Panasonic.setVolume(30);
+        Panasonic.setCurrentProgram(5);
         
-        prva.printAttributes();
+        Panasonic.info();
         
-        Main radio = new Main;
+        Radio myRadio = new Radio(100, 700, 'A');
+        myRadio.setAmFrequency(109);
+        myRadio.setFmFrequency(703);
+        myRadio.setBand('F');
         
+        myRadio.info();
     }
 }
